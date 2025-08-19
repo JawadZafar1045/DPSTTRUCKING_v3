@@ -12,7 +12,7 @@ function Navbar({ menuOpen, setMenuOpen }){
       <div className="container nav-inner">
         <a className="brand" href="#top" onClick={(e)=>handleNavClick(e,'#top')}>
           <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#0ea5e9"/><path d="M8 38h26V22H16l-8 8v8z" fill="#fff"/><path d="M34 22h14l6 8v8H34z" fill="#e2e8f0"/><circle cx="18" cy="46" r="5" fill="#111827"/><circle cx="46" cy="46" r="5" fill="#111827"/></svg>
-          <span>DPST TRUCKING</span>
+          <span>DPST TRUCKING INC</span>
         </a>
         <button className="hamburger" onClick={()=> setMenuOpen(v=>!v)} aria-expanded={menuOpen} aria-controls="mobile-menu">☰</button>
         <nav className={`nav-links ${menuOpen? 'open' : ''}`} id="mobile-menu">
@@ -21,8 +21,8 @@ function Navbar({ menuOpen, setMenuOpen }){
           <a href="#testimonials" onClick={(e)=>handleNavClick(e,'#testimonials')}>Reviews</a>
           <a href="#track" onClick={(e)=>handleNavClick(e,'#track')}>Track</a>
           <a href="#quote" onClick={(e)=>handleNavClick(e,'#quote')} className="btn">Get a Quote</a>
-          <a href="tel:66144440000" className="btn btn-outline">Call</a>
-          <a href="mailto:dpsttrucking2021@yahoo.com" className="btn btn-outline">Email</a>
+          <a href="tel:+166144440000" className="btn btn-outline">Call</a>
+          <a href="mailto:DIMMY_87@yahoo.co.in" className="btn btn-outline">Email</a>
         </nav>
       </div>
     </header>
@@ -36,11 +36,11 @@ function Hero(){
       <div className="container hero-grid">
         <div>
           <div className="pills"><span className="pill">Containers (FCL/LCL)</span><span className="pill">RoRo</span><span className="pill">Vehicles</span><span className="pill">Relocations</span></div>
-          <h1>Welcome to <span style={{color:'var(--brand)'}}>DPST TRUCKING</span></h1>
+          <h1>Welcome to <span style={{color:'var(--brand)'}}>DPST TRUCKING INC</span></h1>
           <p className="sub">Fast, secure international logistics with weekly sailings and expert paperwork.</p>
           <div style={{display:'flex', gap:'.6rem', flexWrap:'wrap'}}>
             <a className="btn" href="#quote" onClick={goQuote}>Get a Quote</a>
-            <a className="btn btn-outline" href="https://wa.me/66144440000" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a className="btn btn-outline" href="https://wa.me/+166144440000" target="_blank" rel="noreferrer">WhatsApp</a>
           </div>
         </div>
         <div className="hero-card">
@@ -163,9 +163,9 @@ function QuoteForm(){
           <div style={{gridColumn:'1 / -1'}}><label className="small" htmlFor="message">Message</label><textarea id="message" className="input" name="message" onChange={onChange} placeholder="Tell us about your cargo..." /></div>
           {status && (<div className="small" style={{gridColumn:'1/-1', color: status.type==='error'?'var(--danger)':'var(--accent)'}}>{status.msg}</div>)}
           <div style={{gridColumn:'1 / -1', display:'flex', gap:'.6rem', justifyContent:'flex-end'}}>
-            <a className="btn btn-outline" href="tel:66144440000">Call</a>
-            <a className="btn btn-outline" href="mailto:dpsttrucking2021@yahoo.com">Email</a>
-            <a className="btn btn-outline" href="https://wa.me/66144440000" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a className="btn btn-outline" href="tel:+166144440000">Call</a>
+            <a className="btn btn-outline" href="mailto:DIMMY_87@yahoo.co.in">Email</a>
+            <a className="btn btn-outline" href="https://wa.me/+166144440000" target="_blank" rel="noreferrer">WhatsApp</a>
             <button className="btn">Submit Request</button>
           </div>
         </form>
@@ -185,8 +185,8 @@ function Contact(){
         <h2>Contact Us</h2>
         <div className="card">
           <p className="small"><b>Billing Address:</b> 3301 Areana Boulevard Apt 12, Sacramento, CA 95834</p>
-          <p className="small"><b>Phone:</b> <a href="tel:66144440000">66144440000</a></p>
-          <p className="small"><b>Email:</b> <a href="mailto:dpsttrucking2021@yahoo.com">dpsttrucking2021@yahoo.com</a></p>
+          <p className="small"><b>Phone:</b> <a href="tel:66144440000">+166144440000</a></p>
+          <p className="small"><b>Email:</b> <a href="mailto:dpsttrucking2021@yahoo.com">DIMMY_87@yahoo.co.in</a></p>
         </div>
         <form className="card" onSubmit={onSubmit} noValidate style={{display:'grid', gridTemplateColumns:'repeat(2,1fr)', gap:'1rem', marginTop:'1rem'}}>
           <div><label className="small" htmlFor="cname">Your Name</label><input id="cname" className="input" name="name" onChange={onChange} required/></div>
@@ -196,8 +196,8 @@ function Contact(){
           {notice && (<div className="small" style={{gridColumn:'1/-1', color: notice.type==='error'?'var(--danger)':'var(--accent)'}}>{notice.msg}</div>)}
           <div style={{gridColumn:'1 / -1', display:'flex', gap:'.6rem', justifyContent:'flex-end'}}>
             <a className="btn btn-outline" href="tel:66144440000">Call</a>
-            <a className="btn btn-outline" href="mailto:dpsttrucking2021@yahoo.com">Email</a>
-            <a className="btn btn-outline" href="https://wa.me/66144440000" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a className="btn btn-outline" href="mailto:DIMMY_87@yahoo.co.in">Email</a>
+            <a className="btn btn-outline" href="https://wa.me/+166144440000" target="_blank" rel="noreferrer">WhatsApp</a>
             <button className="btn">Send Message</button>
           </div>
         </form>
@@ -210,9 +210,9 @@ function Footer(){
   return (
     <footer className="footer">
       <div className="container" style={{display:'flex', justifyContent:'space-between', gap:'1rem', flexWrap:'wrap'}}>
-        <div className="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#0ea5e9"/><path d='M8 38h26V22H16l-8 8v8z' fill='#fff'/><path d='M34 22h14l6 8v8H34z' fill='#e2e8f0'/><circle cx='18' cy='46' r='5' fill='#111827'/><circle cx='46' cy='46' r='5' fill='#111827'/></svg><span>DPST TRUCKING</span></div>
+        <div className="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#0ea5e9"/><path d='M8 38h26V22H16l-8 8v8z' fill='#fff'/><path d='M34 22h14l6 8v8H34z' fill='#e2e8f0'/><circle cx='18' cy='46' r='5' fill='#111827'/><circle cx='46' cy='46' r='5' fill='#111827'/></svg><span>DPST TRUCKING INC</span></div>
         <nav className="nav-links"><a href="#services">Services</a><a href="#why">Why Us</a><a href="#testimonials">Reviews</a><a href="#track">Track</a><a href="#quote">Quote</a><a href="#contact">Contact</a></nav>
-        <p className="small">© {new Date().getFullYear()} DPST TRUCKING. All rights reserved.</p>
+        <p className="small">© {new Date().getFullYear()} DPST TRUCKING INC. All rights reserved.</p>
       </div>
     </footer>
   )
